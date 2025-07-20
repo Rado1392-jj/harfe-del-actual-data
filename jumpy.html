@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bashe :)</title>
+    <style>
+      body {
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .txt {
+        color: white;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: 100%;
+      }
+      video {
+        max-width: 90%;
+        max-height: 80vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="txt">باشه :)</h1>
+    <div class="video-container">
+      <video id="vid" controls autoplay>
+        <source src="bashe.edit .mp4" />
+      </video>
+    </div>
+    <script>
+      document.getElementById("vid").play();
+    </script>
+  </body>
+</html>

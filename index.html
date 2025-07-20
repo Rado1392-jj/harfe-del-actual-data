@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script defer data-domain="rado1392-jj.github.io/harfe-del/index.html" src="https://plausible.io/js/script.js"></script>
+    <title>AHAMGH</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+      }
+      h1 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .input {
+        outline: none;
+        border: 1px solid rgb(32, 32, 224);
+        border-radius: 7px;
+        padding: 8px 15px;
+        font-size: 16px;
+        width: 200px;
+      }
+      .input:focus {
+        border-color: rgba(54, 54, 241, 0.87);
+        box-shadow: 0 0 5px rgba(54, 54, 241, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>حرف دلت رو بزن اتفاقی نمیفته</h1>
+    <input id="txt" class="input" type="text" placeholder="اینجا بنویس..." />
+    <audio
+      id="mp4"
+      src="Ed Sheeren ft Golzar - Azizam(Ahmagh) (128).mp3"
+      preload="auto"
+    ></audio>
+    <audio id="thank" src="thank-you-99932.mp3" preload="auto"></audio>
+
+    <script>
+      // First, get all audio elements
+      const mp4Audio = document.getElementById("mp4");
+      const thankAudio = document.getElementById("thank");
+
+      // Preload audio (helps with playback)
+      mp4Audio.load();
+      thankAudio.load();
+
+      const txt = document.getElementById("txt");
+      txt.addEventListener("input", function () {
+        const inputValue = txt.value.toLowerCase().trim();
+
+        if (inputValue === "عقده ای") {
+          mp4Audio.play().catch((e) => console.log("Playback failed:", e));
+        } else if (inputValue === "69") {
+          window.location.href = "video.html";
+        } else if (
+          inputValue === "طراح این وبسایت خیلی اسکله" ||
+          inputValue === "اسکل" ||
+          inputValue === "احمق" ||
+          inputValue === "این چه وبسایت انیه" ||
+          inputValue === "این چه وبسایت گوهیه" ||
+          inputValue === "ریدم دهن طراح این وبسایت" ||
+          inputValue === "ان" ||
+          inputValue === "به تو چه حرف دل من چیه" ||
+          inputValue === "گی" ||
+          inputValue === "رادین گی"
+          
+        ) {
+          window.location.href = "jumpy.html";
+        } else if (
+          inputValue === "طراح این وبسایت خیلی ادم باحالیه" ||
+          inputValue === "ناز این وبسایت" ||
+          inputValue === "بنازم به این وبسایت" ||
+          inputValue === "چه هنری" ||
+          inputValue === "به به" ||
+          inputValue === "بابا حرفه ای" ||
+          inputValue === "ایول" ||
+          inputValue === "عجب طراح خوبی"
+        ) {
+          window.location.href = "embed.html";
+          thankAudio.play().catch((e) => console.log("Playback failed:", e));
+        }
+      });
+    </script>
+  </body>
+</html>
